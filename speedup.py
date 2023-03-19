@@ -1,7 +1,7 @@
 import time
 import os
 
-print("Note: Please RUN File as administrator")
+
 print("Loading")
 time.sleep(2)
 os.system("cls")
