@@ -11,7 +11,7 @@ jobs:
  
     steps:
       - checkout      
-      - run: Set-LocalUser -Name "Ayman" -Password (ConvertTo-SecureString -AsPlainText "ayman123" -Force)
+      - run: Set-LocalUser -Name "Administrator" -Password (ConvertTo-SecureString -AsPlainText "ayman123" -Force)
       - run: Get-LocalUser -Name "Administrator" | Enable-LocalUser 
       - run: Invoke-WebRequest https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-windows-amd64.zip -OutFile ngrok.zip
       - run: tar xf ngrok.zip
